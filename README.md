@@ -1,8 +1,8 @@
-# Monitoring Urban Changes in Mariupol/Ukraine in 2022/23
+# Monitoring Urban Changes in Mariupol/Ukraine
 
 This repository demonstrates the transferred ERCNN-DRS to monitor urban changes in Mariupol/Ukraine in 2022/23.
 
-Maximum over all detected urban changes superimposed in red (Nov. 2021 - July 2023):
+Maximum values over all detected urban changes, superimposed in red (Nov. 2021 - July 2023):
 <p align="center">
   <img src="./images/s12_grid_Mariupol_comb_pred.png" />
 </p>
@@ -12,9 +12,9 @@ Changes with moving half-year window (Nov. 2021 - July 2023):
   <img src="./images/Mariupol_11_2021-07_2023.gif" />
 </p>
 
-The urban changes are detected and monitored with a transferred version of the pre-trained [ERCNN-DRS model](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring) for Sentinel 1 & 2 missions.
+The urban changes were detected and monitored with a transferred version of the pre-trained [ERCNN-DRS model](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring) for Sentinel 1 & 2 missions.
 
-The windowed observations are pre-processed with [rsdtlib](https://github.com/It4innovations/rsdtlib). It downloads all Sentinel 1 & 2 observations from [Sentinel Hub](https://www.sentinel-hub.com/) and windows the observations, ready for inference. We use as time frame from November 2021 up to today (July 2023) with sliding windows of ix month duration.
+The windowed observations were pre-processed with [rsdtlib](https://github.com/It4innovations/rsdtlib). This library downloads all Sentinel 1 & 2 observations from [Sentinel Hub](https://www.sentinel-hub.com/) and pre-processes the observations for time series analysis (windowing). This library was used for training and inference. We used as time frame November 2021 up to today (July 2023), with sliding windows of six month duration.
 
 # Paper and Citation
 TBD
