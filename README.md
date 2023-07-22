@@ -11,7 +11,9 @@ Changes with moving half-year window (Nov. 2021 - July 2023):
 <p align="center">
   <img src="./images/Mariupol_11_2021-07_2023.gif" />
 </p>
+
 Video file is located [here](./images/Mariupol_11_2021-07_2023.mp4).
+
 
 The urban changes were detected and monitored with a transferred version of the pre-trained [ERCNN-DRS model](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring) for Sentinel 1 & 2 missions.
 
