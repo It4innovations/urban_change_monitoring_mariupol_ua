@@ -19,6 +19,39 @@ The urban changes were detected and monitored with a transferred version of the 
 
 The windowed observations were pre-processed with [rsdtlib](https://github.com/It4innovations/rsdtlib). This library downloads all Sentinel 1 & 2 observations from [Sentinel Hub](https://www.sentinel-hub.com/) and pre-processes the observations for time series analysis (windowing). This library was used for training and inference. We used as time frame November 2021 up to today (July 2023), with sliding windows of six month duration.
 
+# Training/Validation Datasets
+Thanks to the data providers, we can make available the [`training/validation datasets`](https://drive.google.com/drive/folders/1_aPnm4T2rZM6K2cJ2FAX4x_uHWWURJVs?usp=sharing) on Google Drive.
+
+**Note:** The training/validation datasets are `TFRecord` files, with one file for each tile and each tile containing all windows from 2017-2020. Two features are availble, with one describing the time series of observations for each window and a label. The label is the synthetic ground truth which is not used for transfer learning! Instead labels need to be loaded separately from folder [`training/numpy_ground_truth`](./training/numpy_ground_truth/).
+
+**ATTENTION, these files are large!**
+- [V1](https://drive.google.com/file/d/17KxCrS0hlNqKqHIgNFuQjh4jLuz-S2_G/view?usp=sharing) [149.76 GB]
+- [V2](https://drive.google.com/file/d/1xarhnQqY7dWkhDZWxqedhezB0Q1fxzmV/view?usp=sharing) [149.76 GB]
+- [V3](https://drive.google.com/file/d/1YW533A20qJX3pB_IpLeqFIJ-jY79LayV/view?usp=sharing) [149.76 GB]
+- [V4](https://drive.google.com/file/d/1JdRJFGlR7sxkVO2In78Cn7M_OeDefT13/view?usp=sharing) [149.76 GB]
+
+Extract the tar balls `V[1-4].tar` in the respective subdirectories [`./training/V1/`](./training/V1/), [`./training/V2/`](./training/V2/), [`./training/V3/`](./training/V3/), and [`./training/V4/`](./training/V4/).
+
+Versions `V[1-4]` are using different subsets of tiles for training, with valiation tiles being disjunct.
+
+# Training
+Execute the training script [`training/train.py`](./training/train.py). It is recommended to use the NVIDIA GPU Cloud Tensorflow container [`docker://nvcr.io/nvidia/tensorflow:22.02-tf2-py3`](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tensorflow) and at least eight GPUs with a total of 320 GB of memory (8x40 GB).
+
+Change the variable `exp` to the version to train, e.g. `exp = "V1"`.
+
+# Trained Models
+We provide all trained [`models`](./models/):
+- Pre-trained model:
+  - [`baseline.hdf5`](./models/baseline.hdf5): see [original work](../../../)
+- Transferred models:
+  - [`V1_transfer_116.h5`](./models/V1_transfer_116.h5): First transferred model from partial cross-validation (epoch 116)
+  - [`V2_transfer_113.h5`](./models/V2_transfer_113.h5): First transferred model from partial cross-validation (epoch 113)
+  - [`V3_transfer_146.h5`](./models/V3_transfer_146.h5): First transferred model from partial cross-validation (epoch 146)
+  - [`V4_transfer_109.h5`](./models/V4_transfer_109.h5): First transferred model from partial cross-validation (epoch 109)
+
+# Other Use Case
+The basic transfer method has been used to monitor urban changes in Liège/Belgium 2017-2020. That use case is hosted as a dedicated project [here](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring/tree/main/transfer).
+
 # Paper and Citation
 TBD
 
