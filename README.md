@@ -42,12 +42,12 @@ Change the variable `exp` to the version to train, e.g. `exp = "V1"`.
 # Trained Models
 We provide all trained [`models`](./models/):
 - Pre-trained model:
-  - [`baseline.hdf5`](./models/baseline.hdf5): see [original work](../../../)
+  - [`baseline.hdf5`](./models/baseline.hdf5): see [original work](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring)
 - Transferred models:
   - [`V1_transfer_116.h5`](./models/V1_transfer_116.h5): First transferred model from partial cross-validation (epoch 116)
-  - [`V2_transfer_113.h5`](./models/V2_transfer_113.h5): First transferred model from partial cross-validation (epoch 113)
-  - [`V3_transfer_146.h5`](./models/V3_transfer_146.h5): First transferred model from partial cross-validation (epoch 146)
-  - [`V4_transfer_109.h5`](./models/V4_transfer_109.h5): First transferred model from partial cross-validation (epoch 109)
+  - [`V2_transfer_113.h5`](./models/V2_transfer_113.h5): Second transferred model from partial cross-validation (epoch 113)
+  - [`V3_transfer_146.h5`](./models/V3_transfer_146.h5): Third transferred model from partial cross-validation (epoch 146)
+  - [`V4_transfer_109.h5`](./models/V4_transfer_109.h5): Fourth transferred model from partial cross-validation (epoch 109)
 
 # Other Use Case
 The basic transfer method has been used to monitor urban changes in Liège/Belgium 2017-2020. That use case is hosted as a dedicated project [here](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring/tree/main/transfer).
