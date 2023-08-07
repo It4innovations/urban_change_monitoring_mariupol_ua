@@ -2,18 +2,26 @@
 
 This repository demonstrates the transferred ERCNN-DRS to monitor urban changes in Mariupol/Ukraine in 2022/23.
 
-Maximum values over all detected urban changes, superimposed in red (Nov. 2021 - July 2023):
+We continue to update the visualizations below as time progresses. The ones from the paper are linked as well.
+
+Maximum values over all detected urban changes, superimposed in red (Nov. 2021 - August 2023):
 <p align="center">
-  <img src="./images/s12_grid_Mariupol_comb_pred.png" />
+  <img src="./images/s12_grid_Mariupol_comb_pred_11_2021-08_2023.png" />
 </p>
 
-Changes with moving half-year window (Nov. 2021 - July 2023):
+The older counterpart from the paper (Nov. 2021 - July 2023) can be found [here](./images/s12_grid_Mariupol_comb_pred_11_2021-07_2023.png).
+
+Changes with moving half-year window (Nov. 2021 - August 2023):
 <p align="center">
-  <img src="./images/Mariupol_11_2021-07_2023.gif" />
+  <img src="./images/Mariupol_11_2021-08_2023.gif" />
 </p>
 
-Video file is located [here](./images/Mariupol_11_2021-07_2023.mp4).
+Video file is located [here](./images/Mariupol_11_2021-08_2023.mp4).
 
+The older counterpart from the paper (Nov. 2021 - July 2023) can be found [here](./images/Mariupol_11_2021-07_2023.mp4).
+
+**Note:**
+These visualizations were created with 93x93 tiles and an 8 pixel overlap (dead zone of 4 in *rsdtlib*) to provide a seamless presentation without the issues of tile borders.
 
 The urban changes were detected and monitored with a transferred version of the pre-trained [ERCNN-DRS model](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring) for Sentinel 1 & 2 missions.
 
