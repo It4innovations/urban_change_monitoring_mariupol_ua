@@ -61,7 +61,18 @@ We provide all trained [`models`](./models/):
 The basic transfer method has been used to monitor urban changes in Liège/Belgium 2017-2020. That use case is hosted as a dedicated project [here](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring/tree/main/transfer).
 
 # Paper and Citation
-TBD
+The full paper can be found at [arXiv](https://doi.org/10.48550/arXiv.2309.08607).
+
+    @misc{zitzlsberger2023monitoring,
+          title={Monitoring Urban Changes in Mariupol/Ukraine in 2022/23}, 
+          author={Georg Zitzlsberger and Michal Podhoranyi},
+          year={2023},
+          eprint={2309.08607},
+          archivePrefix={arXiv},
+          primaryClass={cs.CY},
+          doi={10.48550/arXiv.2309.08607},
+          url={https://doi.org/10.48550/arXiv.2309.08607}
+    }
 
 # Contact
 Should you have any feedback or questions, please contact the main author: Georg Zitzlsberger (georg.zitzlsberger(a)vsb.cz).
