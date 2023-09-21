@@ -2,23 +2,29 @@
 
 This repository demonstrates the transferred ERCNN-DRS to monitor urban changes in Mariupol/Ukraine in 2022/23.
 
-We continue to update the visualizations below as time progresses. The ones from the paper are linked as well.
+Prediction values (probabilities) over all detected urban changes with a hald-year sliding window, on a static background (for reference only) and superimposed in colors according to the legend (Nov. 2021 - Sept. 2023):
 
-Maximum values over all detected urban changes, superimposed in red (Nov. 2021 - August 2023):
+https://github.com/It4innovations/urban_change_monitoring_mariupol_ua/assets/39556069/fe969481-70be-4d22-84a1-1de2a2c2e07e
+
+This video is located in this repository [here](./images/Mariupol_11_2021-09_2023_background.mp4).
+
+We continue to update the visualizations as time progresses. The ones from the paper (see below) are available as well.
+
+Maximum values over all detected urban changes with a sliding window, superimposed in red (Nov. 2021 - Sept. 2023):
 <p align="center">
-  <img src="./images/s12_grid_Mariupol_comb_pred_11_2021-08_2023.png" />
+  <img src="./images/s12_grid_Mariupol_comb_pred_11_2021-09_2023.png" />
 </p>
 
-The older counterpart from the paper (Nov. 2021 - July 2023) can be found [here](./images/s12_grid_Mariupol_comb_pred_11_2021-07_2023.png).
+The older counterparts from the paper and following months can be found [here](./images/).
 
-Changes with moving half-year window (Nov. 2021 - August 2023):
+Prediction values (probabilities) over all detected urban changes with a hald-year sliding window (Nov. 2021 - Sept. 2023):
 <p align="center">
-  <img src="./images/Mariupol_11_2021-08_2023.gif" />
+  <img src="./images/Mariupol_11_2021-09_2023.gif" />
 </p>
 
-Video file is located [here](./images/Mariupol_11_2021-08_2023.mp4).
+Video file is located [here](./images/Mariupol_11_2021-09_2023.mp4).
 
-The older counterpart from the paper (Nov. 2021 - July 2023) can be found [here](./images/Mariupol_11_2021-07_2023.mp4).
+The older counterparts from the paper and following months can be found [here](./images/).
 
 **Note:**
 These visualizations were created with 93x93 tiles and an 8 pixel overlap (dead zone of 4 in *rsdtlib*) to provide a seamless presentation without the issues of tile borders.
