@@ -2,9 +2,9 @@
 
 This repository demonstrates the transferred ERCNN-DRS to monitor urban changes in Mariupol/Ukraine in 2022/23.
 
-Prediction values (probabilities) over all detected urban changes with a hald-year sliding window, on a static background (for reference only) and superimposed in colors according to the legend (Nov. 2021 - Sept. 2023):
+Prediction values (probabilities) over all detected urban changes with a half-year sliding window, on a static background (for reference only) and superimposed in colors according to the legend (Nov. 2021 - Sept. 2023):
 
-https://github.com/It4innovations/urban_change_monitoring_mariupol_ua/assets/39556069/fe969481-70be-4d22-84a1-1de2a2c2e07e
+[![Watch the video](images/Mariupol_11_2021-09_2023_youtube.png)](https://www.youtube.com/watch?v=LFzD0wA-gY0)
 
 This video is located in this repository [here](./images/Mariupol_11_2021-09_2023_background.mp4).
 
@@ -17,7 +17,7 @@ Maximum values over all detected urban changes with a sliding window, superimpos
 
 The older counterparts from the paper and following months can be found [here](./images/).
 
-Prediction values (probabilities) over all detected urban changes with a hald-year sliding window (Nov. 2021 - Sept. 2023):
+Prediction values (probabilities) over all detected urban changes with a half-year sliding window (Nov. 2021 - Sept. 2023):
 <p align="center">
   <img src="./images/Mariupol_11_2021-09_2023.gif" />
 </p>
