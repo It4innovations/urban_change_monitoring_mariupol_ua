@@ -64,13 +64,10 @@ We provide all trained [`models`](./models/):
   - [`V4_transfer_109.h5`](./models/V4_transfer_109.h5): Fourth transferred model from partial cross-validation (epoch 109)
 
 # Integration into Floreon
-The data is also available in an experimental layer in Floreon [here](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4185555&CENTER_LAT=5960863&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:mariupol&time=2022-06-18).
+The data is also available in an experimental layer in Floreon:
+[![here](./images/floreon_mariupol.png)](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4185555&CENTER_LAT=5960863&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:mariupol&time=2022-06-18).
 
-<p align="center">
-  <img src="./images/floreon_mariupol.png" />
-</p>
-
-Set the time units to `Days` to scroll faster through time. Please note that only the start time of the window is shown in the timeline and that windows are only available in the ranges mentioned above.
+Set the time units to `Days` to scroll faster through time. Please note that the window with the nearest start time is shown in the timeline and that windows are only available in the ranges mentioned above.
 
 
 # Other Use Case
