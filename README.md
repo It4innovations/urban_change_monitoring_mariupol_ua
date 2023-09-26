@@ -65,13 +65,24 @@ We provide all trained [`models`](./models/):
 
 # Integration into Floreon
 The data is also available in an experimental layer in Floreon:
-[![here](./images/floreon_mariupol.png)](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4185555&CENTER_LAT=5960863&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:mariupol&time=2022-06-18).
+[![here](./images/floreon_mariupol.png)](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4185555&CENTER_LAT=5960863&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:mariupol&time=2022-06-18)
 
 Set the time units to `Days` to scroll faster through time. Please note that the window with the nearest start time is shown in the timeline and that windows are only available in the ranges mentioned above.
 
 
-# Other Use Case
-The basic transfer method has been used to monitor urban changes in Liège/Belgium 2017-2020. That use case is hosted as a dedicated project [here](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring/tree/main/transfer).
+# Other Use Cases
+- **The origin:**
+  
+  The basic transfer method has been used to monitor urban changes in Liège/Belgium 2017-2020. That use case is hosted as a dedicated project [here](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring/tree/main/transfer).
+
+- **Experimental: Bakhmut site, Ukraine in Floreon:**
+
+  [![here](./images/floreon_bakhmut.png)](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4229996&CENTER_LAT=6208317&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:bakhmut&time=2022-06-18)
+
+  Set the time units to `Days` to scroll faster through time. Please note that the window with the nearest start time is shown in the timeline and that windows are only available in the ranges mentioned above for Mariupol, Ukraine.
+
+  **Note:** The ERCNN-DRS was not transferred to this site but the transferred models (V1-4) for Mariupol were used.
+
 
 # Paper and Citation
 The full paper can be found at [arXiv](https://doi.org/10.48550/arXiv.2309.08607).
