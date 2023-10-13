@@ -33,6 +33,11 @@ The urban changes were detected and monitored with a transferred version of the 
 
 The windowed observations were pre-processed with [rsdtlib](https://github.com/It4innovations/rsdtlib). This library downloads all Sentinel 1 & 2 observations from [Sentinel Hub](https://www.sentinel-hub.com/) and pre-processes the observations for time series analysis (windowing). This library was used for training and inference. We used as time frame November 2021 up to today (July 2023), with sliding windows of six month duration.
 
+
+# Pre-processing with rsdtlib
+The scripts to download and process the Sentinel 1 and Sentinel 2 observations to windowed time series are available at the [`rsdtlib` repository](https://github.com/It4innovations/rsdtlib) in the subdirectory [`urban_change_monitoring_mariupol_ua`](https://github.com/It4innovations/rsdtlib/tree/main/urban_change_monitoring_mariupol_ua).
+See below for the already processed and ready-to-go training/validation datasets.
+
 # Training/Validation Datasets
 Thanks to the data providers, we can make available the [`training/validation datasets`](https://drive.google.com/drive/folders/1_aPnm4T2rZM6K2cJ2FAX4x_uHWWURJVs?usp=sharing) on Google Drive.
 
