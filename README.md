@@ -1,3 +1,18 @@
+**Table of Contents:**
+- [Monitoring Urban Changes in Mariupol/Ukraine](#monitoring-urban-changes-in-mariupolukraine)
+- [Pre-processing with rsdtlib](#pre-processing-with-rsdtlib)
+- [Training/Validation Datasets](#trainingvalidation-datasets)
+- [Training](#training)
+- [Trained Models](#trained-models)
+- [Integration into Floreon](#integration-into-floreon)
+- [Other Use Cases](#other-use-cases)
+- [Paper and Citation](#paper-and-citation)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+- [Disclaimer](#disclaimer)
+- [Ethical Statement](#ethical-statement)
+
 # Monitoring Urban Changes in Mariupol/Ukraine
 
 This repository demonstrates the transferred ERCNN-DRS to monitor urban changes in Mariupol/Ukraine in 2022/23.
@@ -73,7 +88,6 @@ The data is also available in an experimental layer in Floreon:
 [![here](./images/floreon_mariupol.png)](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4185555&CENTER_LAT=5960863&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:mariupol&time=2022-06-18)
 
 Set the time units to `Days` to scroll faster through time. Please note that the window with the nearest start time is shown in the timeline and that windows are only available in the ranges mentioned above.
-
 
 # Other Use Cases
 - **The origin:**
