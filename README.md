@@ -1,3 +1,18 @@
+**Table of Contents:**
+- [Monitoring Urban Changes in Mariupol/Ukraine](#monitoring-urban-changes-in-mariupolukraine)
+- [Pre-processing with rsdtlib](#pre-processing-with-rsdtlib)
+- [Training/Validation Datasets](#trainingvalidation-datasets)
+- [Training](#training)
+- [Trained Models](#trained-models)
+- [Integration into Floreon](#integration-into-floreon)
+- [Other Use Cases](#other-use-cases)
+- [Paper and Citation](#paper-and-citation)
+- [Contact](#contact)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+- [Disclaimer](#disclaimer)
+- [Ethical Statement](#ethical-statement)
+
 # Monitoring Urban Changes in Mariupol/Ukraine
 
 This repository demonstrates the transferred ERCNN-DRS to monitor urban changes in Mariupol/Ukraine in 2022/23.
@@ -36,6 +51,11 @@ The urban changes were detected and monitored with a transferred version of the 
 
 The windowed observations were pre-processed with [rsdtlib](https://github.com/It4innovations/rsdtlib). This library downloads all Sentinel 1 & 2 observations from [Sentinel Hub](https://www.sentinel-hub.com/) and pre-processes the observations for time series analysis (windowing). This library was used for training and inference. We used as time frame November 2021 up to today (July 2023), with sliding windows of six month duration.
 
+
+# Pre-processing with rsdtlib
+The scripts to download and process the Sentinel 1 and Sentinel 2 observations to windowed time series are available at the [`rsdtlib` repository](https://github.com/It4innovations/rsdtlib) in the subdirectory [`urban_change_monitoring_mariupol_ua`](https://github.com/It4innovations/rsdtlib/tree/main/urban_change_monitoring_mariupol_ua).
+See below for the already processed and ready-to-go training/validation datasets.
+
 # Training/Validation Datasets
 Thanks to the data providers, we can make available the [`training/validation datasets`](https://drive.google.com/drive/folders/1_aPnm4T2rZM6K2cJ2FAX4x_uHWWURJVs?usp=sharing) on Google Drive.
 
@@ -67,17 +87,24 @@ We provide all trained [`models`](./models/):
   - [`V4_transfer_109.h5`](./models/V4_transfer_109.h5): Fourth transferred model from partial cross-validation (epoch 109)
 
 # Integration into Floreon
-The data is also available in an experimental layer in Floreon [here](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4185555&CENTER_LAT=5960863&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:mariupol).
+The data is also available in an experimental layer in Floreon:
+[![here](./images/floreon_mariupol.png)](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4185555&CENTER_LAT=5960863&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:mariupol&time=2022-06-18)
 
-<p align="center">
-  <img src="./images/floreon_mariupol.png" />
-</p>
+Set the time units to `Days` to scroll faster through time. Please note that the window with the nearest start time is shown in the timeline and that windows are only available in the ranges mentioned above.
 
-Set the time units to `Days` to scroll faster through time. Please note that only the start time of the window is shown in the timeline and that windows are only available in the ranges mentioned above.
+# Other Use Cases
+- **The origin:**
+  
+  The basic transfer method has been used to monitor urban changes in Liège/Belgium 2017-2020. That use case is hosted as a dedicated project [here](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring/tree/main/transfer).
 
+- **Experimental: Bakhmut site, Ukraine in Floreon:**
 
-# Other Use Case
-The basic transfer method has been used to monitor urban changes in Liège/Belgium 2017-2020. That use case is hosted as a dedicated project [here](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring/tree/main/transfer).
+  [![here](./images/floreon_bakhmut.png)](https://floreon.eu/mapa/?ZOOM=7&CENTER_LON=4229996&CENTER_LAT=6208317&LAYER=basemaps:OSM-WMS-Coloured&LAYER=insar:bakhmut&time=2022-06-18)
+
+  Set the time units to `Days` to scroll faster through time. Please note that the window with the nearest start time is shown in the timeline and that windows are only available in the ranges mentioned above for Mariupol, Ukraine.
+
+  **Note:** The ERCNN-DRS was not transferred to this site but the transferred models (V1-4) for Mariupol were used.
+
 
 # Paper and Citation
 The full paper can be found at [arXiv](https://doi.org/10.48550/arXiv.2309.08607).
