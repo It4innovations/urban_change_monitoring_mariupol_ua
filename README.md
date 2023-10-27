@@ -19,7 +19,7 @@ This repository demonstrates the transferred ERCNN-DRS to monitor urban changes 
 
 Prediction values (probabilities) over all detected urban changes with a half-year sliding window, on a static background (for reference only) and superimposed in colors according to the legend (Nov. 2021 - Oct. 2023):
 
-[![Watch the video](images/Mariupol_11_2021-10_2023_youtube.png)](Mariupol_11_2021-09_2023_youtube.png)
+[![Watch the video](images/Mariupol_11_2021-10_2023_youtube.png)](https://www.youtube.com/watch?v=gJ664btdLs8)
 
 This video is located in this repository [here](./images/Mariupol_11_2021-10_2023_background.mp4).
 
@@ -31,8 +31,6 @@ Maximum values over all detected urban changes with a sliding window, superimpos
 </p>
 
 The GeoTIFF file is [here](./images/Mariupol_11_2021-10_2023.tif).
-
-Files of the older counterparts from the paper and following months can be found [here](./images/).
 
 
 Prediction values (probabilities) over all detected urban changes with a half-year sliding window (Nov. 2021 - Oct. 2023):
