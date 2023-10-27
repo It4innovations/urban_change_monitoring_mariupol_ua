@@ -2,27 +2,30 @@
 
 This repository demonstrates the transferred ERCNN-DRS to monitor urban changes in Mariupol/Ukraine in 2022/23.
 
-Prediction values (probabilities) over all detected urban changes with a half-year sliding window, on a static background (for reference only) and superimposed in colors according to the legend (Nov. 2021 - Sept. 2023):
+Prediction values (probabilities) over all detected urban changes with a half-year sliding window, on a static background (for reference only) and superimposed in colors according to the legend (Nov. 2021 - Oct. 2023):
 
-[![Watch the video](images/Mariupol_11_2021-09_2023_youtube.png)](https://www.youtube.com/watch?v=LFzD0wA-gY0)
+[![Watch the video](images/Mariupol_11_2021-10_2023_youtube.png)](Mariupol_11_2021-09_2023_youtube.png)
 
-This video is located in this repository [here](./images/Mariupol_11_2021-09_2023_background.mp4).
+This video is located in this repository [here](./images/Mariupol_11_2021-10_2023_background.mp4).
 
 We continue to update the visualizations as time progresses. The ones from the paper (see below) are available as well.
 
-Maximum values over all detected urban changes with a sliding window, superimposed in red (Nov. 2021 - Sept. 2023):
+Maximum values over all detected urban changes with a sliding window, superimposed in red (Nov. 2021 - Oct. 2023):
 <p align="center">
-  <img src="./images/s12_grid_Mariupol_comb_pred_11_2021-09_2023.png" />
+  <img src="./images/s12_grid_Mariupol_comb_pred_11_2021-10_2023.png" />
 </p>
 
-The older counterparts from the paper and following months can be found [here](./images/).
+The GeoTIFF file is [here](./images/Mariupol_11_2021-10_2023.tif).
 
-Prediction values (probabilities) over all detected urban changes with a half-year sliding window (Nov. 2021 - Sept. 2023):
+Files of the older counterparts from the paper and following months can be found [here](./images/).
+
+
+Prediction values (probabilities) over all detected urban changes with a half-year sliding window (Nov. 2021 - Oct. 2023):
 <p align="center">
-  <img src="./images/Mariupol_11_2021-09_2023.gif" />
+  <img src="./images/Mariupol_11_2021-10_2023.gif" />
 </p>
 
-Video file is located [here](./images/Mariupol_11_2021-09_2023.mp4).
+Video file is located [here](./images/Mariupol_11_2021-10_2023.mp4).
 
 The older counterparts from the paper and following months can be found [here](./images/).
 
