@@ -122,7 +122,7 @@ The full paper can be found at [arXiv](https://doi.org/10.48550/arXiv.2309.08607
 Should you have any feedback or questions, please contact the main author: Georg Zitzlsberger (georg.zitzlsberger(a)vsb.cz).
 
 # Acknowledgments
-This research was funded by the Ministry of Education, Youth and Sports from the National Programme of Sustainability (NPS II) project “IT4Innovations excellence in science - LQ1602” and by the IT4Innovations Infrastructure, which is supported by the Ministry of Education, Youth and Sports of the Czech Republic through the e-INFRA CZ (ID:90140), and via the Open Access Grant Competition (OPEN-25-24 and OPEN-27-1). This work was also supported by ESA Network of Resources Initiative to provide access to Sentinel Hub, and Airbus Pléiades.
+This research was funded by the Ministry of Education, Youth and Sports from the National Programme of Sustainability (NPS II) project “IT4Innovations excellence in science - LQ1602” and by the IT4Innovations Infrastructure, which is supported by the Ministry of Education, Youth and Sports of the Czech Republic through the e-INFRA CZ (ID:90140), and via the Open Access Grant Competition (OPEN-25-24 and OPEN-27-1). This work was also supported by ESA Network of Resources Initiative (ID:2923ca) to provide access to Sentinel Hub, and Airbus Pléiades.
 
 We also would like to thank CESNET Meta Centrum for providing us access to a DGX H100 node.
 
