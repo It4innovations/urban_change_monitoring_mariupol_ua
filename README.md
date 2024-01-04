@@ -25,7 +25,7 @@ This video is located in this repository [here](./images/Mariupol_11_2021-12_202
 
 We continue to update the visualizations as time progresses. The ones from the paper (see below) are available as well.
 
-Maximum values over all detected urban changes with a sliding window, superimposed in red (Nov. 2021 - Nov. 2023):
+Maximum values over all detected urban changes with a sliding window, superimposed in red (Nov. 2021 - Dec. 2023):
 <p align="center">
   <img src="./images/s12_grid_Mariupol_comb_pred_11_2021-12_2023.png" />
 </p>
@@ -33,7 +33,7 @@ Maximum values over all detected urban changes with a sliding window, superimpos
 The GeoTIFF file is [here](./images/Mariupol_11_2021-12_2023.tif).
 
 
-Prediction values (probabilities) over all detected urban changes with a half-year sliding window (Nov. 2021 - Nov. 2023):
+Prediction values (probabilities) over all detected urban changes with a half-year sliding window (Nov. 2021 - Dec. 2023):
 <p align="center">
   <img src="./images/Mariupol_11_2021-12_2023.gif" />
 </p>
@@ -47,7 +47,7 @@ These visualizations were created with 93x93 tiles and an 8 pixel overlap (dead 
 
 The urban changes were detected and monitored with a transferred version of the pre-trained [ERCNN-DRS model](https://github.com/It4innovations/ERCNN-DRS_urban_change_monitoring) for Sentinel 1 & 2 missions.
 
-The windowed observations were pre-processed with [rsdtlib](https://github.com/It4innovations/rsdtlib). This library downloads all Sentinel 1 & 2 observations from [Sentinel Hub](https://www.sentinel-hub.com/) and pre-processes the observations for time series analysis (windowing). This library was used for training and inference. We used as time frame November 2021 up to today (July 2023), with sliding windows of six month duration.
+The windowed observations were pre-processed with [rsdtlib](https://github.com/It4innovations/rsdtlib). This library downloads all Sentinel 1 & 2 observations from [Sentinel Hub](https://www.sentinel-hub.com/) and pre-processes the observations for time series analysis (windowing). This library was used for training and inference. We used as time frame November 2021 up to today (December 2023), with sliding windows of six month duration.
 
 
 # Pre-processing with rsdtlib
