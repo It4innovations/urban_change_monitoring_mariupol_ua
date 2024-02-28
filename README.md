@@ -105,17 +105,18 @@ Set the time units to `Days` to scroll faster through time. Please note that the
 
 
 # Paper and Citation
-The full paper can be found at [arXiv](https://doi.org/10.48550/arXiv.2309.08607).
+The full paper can be found at [IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing](https://ieeexplore.ieee.org/document/10423108).
 
-    @misc{zitzlsberger2023monitoring,
-          title={Monitoring Urban Changes in Mariupol/Ukraine in 2022/23}, 
-          author={Georg Zitzlsberger and Michal Podhoranyi},
-          year={2023},
-          eprint={2309.08607},
-          archivePrefix={arXiv},
-          primaryClass={cs.CY},
-          doi={10.48550/arXiv.2309.08607},
-          url={https://doi.org/10.48550/arXiv.2309.08607}
+    @ARTICLE{10423108,
+          author={Zitzlsberger, Georg and Podhoranyi, Michal},
+          journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+          title={Monitoring of Urban Changes With Multimodal Sentinel 1 and 2 Data in Mariupol, Ukraine, in 2022/23},
+          year={2024},
+          volume={17},
+          number={},
+          pages={5245-5265},
+          doi={10.1109/JSTARS.2024.3362688},
+          url={https://doi.org/10.1109/JSTARS.2024.3362688}
     }
 
 # Contact
